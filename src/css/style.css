@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+body{
+    background-color: #F7E6FA;    
+}
+
+header{
+    width: 100%;
+    height: 50px;    
+}
+
+header > img{
+    padding-top: 19px;
+    width: 95px;
+}
+
+main{
+    width: 100%;
+    height: 90vh;    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+section{
+    width: 40%;
+    height: 100%; 
+}
+
+/* SECTION LEFT*/
+.entrada{
+    width: 60%;
+    box-sizing: border-box;        
+}
+
+.area{
+    width: 80%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    resize: none;
+    font-size: 25px;
+    font-family: 'Ubuntu Mono', monospace;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid #FC1DF1;
+    box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 17%);
+}
+
+.container-alerta{    
+    margin-top: 10px;
+}
+
+.container-alerta p{
+    margin-left: 80px;
+    margin-top: 26px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.container-botones{
+    text-align: center;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.btn-encriptar, .btn-desencriptar{
+    width: 274px;
+    height: 55px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.5rem;
+}
+
+.btn-encriptar{
+    background: #3f115c;
+    color: #ffffff;
+}
+
+.btn-encriptar:hover{
+    box-shadow: 0 2px 16px rgb(243, 29, 197);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.btn-desencriptar{
+    background: #ffffff;
+    color: #3f115c;
+}
+
+.btn-desencriptar:hover{
+    box-shadow: 0px 2px 16px rgb(243, 29, 197);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+
+/* SECTION RIGHT*/
+.salida{
+    width: 30%;    
+    margin-right: 120px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    border: 2px solid #FC1DF1;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container-munieco{
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container-h3{
+    width: 100%;
+    height: 20%;
+    text-align: center;    
+    box-sizing: border-box;
+    padding-top: 40px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2em;    
+}
+
+.container-parrafo{
+    width: 100%;
+    height: 20%;
+    text-align: center;    
+    box-sizing: border-box;
+    padding-top: 40px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1em;
+}
+
+.container-resultado{
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    padding: 25px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 25px;
+}
+
+.container-copiar{
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 94px;
+}
+
+.btn-copiar{
+    width: 274px;
+    height: 55px;
+    border-radius: 24px;
+    background: #3f115c;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.5rem;
+}
+
+.btn-copiar:hover{
+    box-shadow: 0 2px 16px rgb(243, 29, 197);
+    transition: all 0.2s ease;
+}
+
+/* FOOTER */
+footer .nav-footer{
+    display: flex;    
+}
+
+.icono1{
+    height: 52px;    
+    padding-top: 11px;
+}
+
+footer{
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F7E6FA;
+    font-family: 'Ubuntu Mono', monospace;
+    flex-direction: column;
+    padding-top: 22px;    
+}
+
+footer > p{
+    padding-top: 11px;
+    font-size: small;
+}
+
+/* Ocultar Elementos */
+.ocultar{
+    display: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px){
+    body{
+        position: relative;
+        padding-bottom: 15em;
+    }
+
+    main{
+        display: block;
+    }
+
+    .entrada{
+        height: 70%;
+        width: 100%;
+    }
+
+    .area{
+        width: 95%;
+    }
+
+    .container-alerta p{
+        margin-left: 28px;
+        margin-top: 15px;
+    }    
+
+    .container-botones{
+        justify-content: space-evenly;
+        display: flex;
+        margin-top: 1px;
+    }
+
+    .btn-encriptar,.btn-desencriptar{
+        width: 170px;
+        height: 49px;
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+
+    .salida{
+        width: 96%;
+        height: 60%;
+        margin-top: 11px;
+        margin-left: 10px;
+    }
+
+    .container-munieco{
+        height: 75%;
+        padding-top: 8px;
+    }
+
+    .container-munieco img{
+        width: 245px;
+    }
+
+    .container-h3, .container-parrafo{
+        width: 100%;
+        height: 11%;
+        padding-top: 5px;
+        font-size: 1em;
+    }
+
+    .container-copiar{
+        padding-top: 19px;
+    }
+
+    .btn-copiar{
+        width: 170px;
+        height: 49px;
+        font-size: 1.3rem;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        height: 12vh;
+    }  
+    
+    .nav-footer{
+        padding-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    main{
+        display: inline-flex;
+        padding-top: 30px;
+        padding-bottom: 2em;
+    }
+
+    .container-alerta p{
+        margin-left: 54px;
+        margin-top: 15px;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 183px;    
+        height: 55px;
+    }
+
+    .salida{
+        margin-right: 5px;
+        width: 40%;
+        padding: 10px;
+    }
+
+    .container-munieco img{
+        width: 270px;
+    }
+
+    .container-h3{
+        padding-top: 3px;
+    }
+
+    .container-parrafo{
+        padding-top: 3px;
+    }
+
+    .container-copiar{
+        padding-top: 85px;
+    }
+
+    .btn-copiar{
+        width: 183px;
+        height: 55px;
+    }
+
+    footer{
+        height: 12vh;
+    }
+} 

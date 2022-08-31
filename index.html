@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Encriptador | Luciana Fernández</title>
+    <link rel="shortcut icon" href="./img/secret-folder.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">  
+</head>
+<body>
+    <header>
+        <img src="./src/img/Logo.png" alt="Logo de Alura">
+    </header>
+    <main>
+        <section class="entrada">
+            <textarea class="area" onkeypress="return soloLetras(event);" onKeyUP="this.value=this.value.toLowerCase();" placeholder="Ingrese el texto aquí" id="areaTexto"></textarea>
+            <div class="container-alerta">
+                <p><img src="./src/img/vector.svg"> Sólo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="container-botones">
+                <input type="button" class="btn-encriptar" onclick="btnEncriptar()" value="Encriptar">
+                <input type="button" class="btn-desencriptar" id="btnApagado" onclick="btnDesencriptar()" value="Desencriptar" disabled>
+            </div>            
+        </section>
+
+        <section class="salida">
+            <div class="container-munieco">
+                <img src="./src/img/Muñeco.png" alt="Muñeco de Alura">
+            </div>
+            <div class="container-h3">
+                <h3>Ningún mensaje fue encontrado</h3>
+            </div>
+            <div class="container-parrafo">
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="container-resultado">
+                <p class="texto-resultado" id="txtResultado"></p>
+            </div>
+            <div class="container-copiar">
+                <input type="button" class="btn-copiar" id="btnCopiar" onclick="btnCopy()" value="Copiar">
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>© Luciana Fernández - 2022</p>
+        <nav class="nav-footer">            
+            <a href="https://www.linkedin.com/in/lucianafernandez182/" target="_blank"><img class="icono1" src="./src/img/linkedin.png" alt="icono linkedin"></a>
+			<a href="https://github.com/lu182" target="_blank"><img src="./src/img/github.png" alt="icono github"></a>           
+        </nav>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
