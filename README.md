@@ -2,9 +2,7 @@
 
 ## Primer Desafío
 
-### <strong>El desafío es crear una aplicación que utilizando claves sencillas se puedan encriptar y desencriptar textos</strong>
-
-<br>
+El desafío es crear una aplicación que utilizando claves sencillas se puedan encriptar y desencriptar textos
 
 ### [Link al Encriptador ](https://lu182.github.io/encriptador/)
 
