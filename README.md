@@ -1,4 +1,4 @@
-# Curso Full Stack ORACLE NEXT EDUCATION - ALURA
+# Curso FullStack ORACLE NEXT EDUCATION - ALURA Latam
 
 ## Primer Desafío
 
@@ -6,7 +6,6 @@
 
 <br>
 
-# Link directo al proyecto desplegado
 ### [Link al Encriptador ](https://lu182.github.io/encriptador/)
 
 ___
